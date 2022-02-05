@@ -96,7 +96,7 @@ article p{
     padding: 0.8rem;
     height: 3.2rem;
     display: block;
-    bottom: 3.2rem;
+    bottom: 3.3rem;
     left: 67%;
     box-shadow: 0rem 0.5rem 1.7rem hsl(0, 45%, 86%);
     width: 5.75rem;
@@ -113,7 +113,7 @@ article p{
 
 .error{
     position: relative;
-    right: 23%;
+    right: 20%;
     bottom: -0.3rem;
     display: none;
 }
@@ -164,6 +164,10 @@ article p{
 
     .logo{
         left: 3rem;
+    }
+
+    .error{
+        right: 23%;
     }
 }
 
@@ -218,7 +222,7 @@ article p{
     }
 
     .error{
-        right: 15%;
+        right: 7%;
     }
 
     #message{
@@ -241,6 +245,10 @@ article p{
     #message{
         left: 4rem;
     }
+
+    .error{
+        right: 20%;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -252,5 +260,21 @@ article p{
         height: 70vh;
         width: 200vw;
         background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 288px){
+    #myForm button{
+        bottom: 5rem;
+    }
+
+    #message{
+        bottom: 4.5rem;
+        left: 3rem;
+    }
+
+    .error{
+        bottom: 2.5rem;
+        left: 70%;
     }
 }
