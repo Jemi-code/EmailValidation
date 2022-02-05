@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper{
+    /* margin: auto; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.inner_wrapper{
+    margin: 10rem 0 0rem 6rem;
+    /* width: 60%; */
+}
+
+.logo{
+    position: absolute;
+    left: 6rem;
+    top: 3rem;
+}
+
+header{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+header span{
+    display: block;
+}
+
+header span{
+    font-size: 4rem;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+header .second, h1{
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+article p{
+    margin-top: 0.8rem;
+    font-weight: 400;
+    width: 80%;
+    line-height: 1.5rem;
+    color: hsl(0, 36%, 70%);
+}
+
+#myForm{
+    margin-top: 2rem;
+}
+
+#myForm input[type = "email"]{
+   padding: 1rem 1rem 1rem 2rem;
+   width: 80%;
+   font-size: 16px;
+   border: 1px solid hsla(0, 6%, 24%, 0.404);
+   border-radius: 2rem;
+   -webkit-border-radius: 2rem;
+   -moz-border-radius: 2rem;
+   -ms-border-radius: 2rem;
+   -o-border-radius: 2rem;
+   margin-right: 0;
+}
+
+#myForm input[type = "email"]:focus{
+    outline: 1px solid hsla(0, 6%, 24%, 0.404);
+}
+
+#myForm ::-webkit-input-placeholder{
+    color: hsla(0, 6%, 24%, 0.404);
+}
+
+#myForm button{
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border-radius: 2rem;
+    position: relative;
+    padding: 0.8rem;
+    height: 3.2rem;
+    display: block;
+    bottom: 3.2rem;
+    left: 67%;
+    box-shadow: 0rem 0.5rem 1.7rem hsl(0, 45%, 86%);
+    width: 5.75rem;
+    border: none;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+#myForm button:hover{
+    background: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 80%, 86%))
+}
+
+.error{
+    position: relative;
+    right: 23%;
+    bottom: -0.3rem;
+    display: none;
+}
+
+#message{
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+    color: hsl(0, 93%, 68%);
+    display: none;
+}
+
+.image{
+    height: 100%;
+    width: 80%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+.attribution {
+        font-size: 11px; 
+        text-align: center; 
+}
+    
+.attribution a {
+         color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 815px){
+    .inner_wrapper{
+        margin: 10rem 0 0 2rem;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    #myForm input[type = "email"]{
+        width: 80%;
+    }
+
+    #myForm button{
+        left: 65%;
+    }
+
+    .logo{
+        left: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 651px){
+    .wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+        background-image: none;
+        align-items: center;
+        max-width: 100vw;
+    }
+
+    #myForm input[type = "email"]{
+        width: 80%;
+        position: relative;
+        left: 3rem;
+    }
+
+    #myForm button{
+        left: 80%;
+    }
+
+    .image{
+        height: 20rem;
+        width: 100vw;
+        background-image: url('images/hero-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 8rem;
+    }
+
+    .image img{
+        visibility: hidden;
+    }
+
+    h1, span, p{
+        text-align: center;
+    }
+
+    p{
+        position: relative;
+        padding-top: 1rem;
+        left: 3rem;
+    }
+
+    .inner_wrapper{
+        margin: -3rem 0 5rem 0rem;
+        width: 100vw;
+    }
+
+    .error{
+        right: 15%;
+    }
+
+    #message{
+        left: 5rem;
+    }
+}
+
+@media screen and (max-width: 483px){
+    #myForm input[type = "email"]{
+        width: 80%;
+        position: relative;
+        left: 2rem;
+    }
+
+    #myForm button{
+        width: 4rem;
+        left: 75%;
+    }
+
+    #message{
+        left: 4rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .inner_wrapper{
+        margin-left: 5rem;
+    }
+
+    .image{
+        height: 70vh;
+        width: 200vw;
+        background-size: 100% 100%;
+    }
+}
