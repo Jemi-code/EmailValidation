@@ -228,14 +228,14 @@ article p{
 
 @media screen and (max-width: 483px){
     #myForm input[type = "email"]{
-        width: 80%;
+        width: 90%;
         position: relative;
-        left: 2rem;
+        left: 1rem;
     }
 
     #myForm button{
         width: 4rem;
-        left: 75%;
+        left: 80%;
     }
 
     #message{
